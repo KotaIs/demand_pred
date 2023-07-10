@@ -1,13 +1,12 @@
 import joblib
 from datetime import datetime as dt
-import streamlit as st
 import numpy as np
-from prophet import Prophet
 import pandas as pd
-from japanmap import pref_names, pref_code, picture
-import matplotlib.pyplot as plt
+import streamlit as st
 import plotly.express as px
+from prophet import Prophet
 import matplotlib.pyplot as plt
+from japanmap import pref_names, pref_code, picture
 
 # デフォルト時刻の定義
 now = dt.now()
