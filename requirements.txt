@@ -5,4 +5,4 @@ pandas
 streamlit
 plotly.express
 prophet
-PIL
+Pillow
