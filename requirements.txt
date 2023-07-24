@@ -7,3 +7,4 @@ plotly.express
 prophet
 matplotlib
 japanmap
+opencv-python
