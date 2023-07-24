@@ -5,6 +5,4 @@ pandas
 streamlit
 plotly.express
 prophet
-matplotlib
-japanmap
-opencv-python-headless
+PIL

@@ -5,8 +5,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 from prophet import Prophet
-import matplotlib.pyplot as plt
-from japanmap import pref_names, pref_code, picture
+from PIL import Image
 
 # デフォルト時刻の定義
 now = dt.now()
@@ -16,12 +15,9 @@ st.title('東京電力管内　電力需要予測')
 
 
 # 東京電力の電力供給エリアを日本地図で表示
-st.subheader('電力予測エリア')
-fig = plt.figure(figsize=(15, 15))
-
-plt.imshow(picture({'東京':'blue', '神奈川':'blue', '埼玉':'blue', '千葉':'blue', '茨城':'blue',
-                    '栃木':'blue', '群馬':'blue', '山梨':'blue', '静岡':'blue'}))
-st.pyplot(fig)
+st.subheader('電力需要量予測エリア')
+image = Image.open('pred_area.png')
+st.image(image, caption='pred_area.png',use_column_width=True)
 
 
 # サイドバーに記載する予測条件の入力項目
