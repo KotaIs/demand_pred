@@ -1,3 +1,5 @@
+joblib
+datetime
 numpy
 pandas 
 streamlit
